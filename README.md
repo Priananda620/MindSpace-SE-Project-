@@ -1,3 +1,4 @@
 <p align="center">
-	<img src="asset/logo.png" width="192" />
+	<img src="media/svg.png" width="192" />
+	MindSpace
 </p>
