@@ -1,0 +1,31 @@
+hero-content-container {
+    padding-top: 15em;
+}
+form {
+    display: flex;
+    flex-flow: column;
+}
+
+form label {
+    margin: 1em 0;
+}
+
+.form-input {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 2em;
+    padding: .5em .8em;
+    font-weight: 700;
+    background: whitesmoke;
+    color: #868ca0;
+    border: 0;
+    font-family: inherit;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    outline: none;
+    transition: box-shadow ease-in-out .2s;
+    font-size: 1.1em;
+}
+
+form input, textarea {
+    margin: 0 0 1em 0 !important;
+}

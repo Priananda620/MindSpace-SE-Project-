@@ -1,0 +1,206 @@
+
+
+#profile-container{
+  padding: 8em 10% 4em 10%;
+  color: rgb(213, 214, 214);
+  background: #181818;
+}
+
+#profile-container #user-avatar-rounded{
+  width: 10em !important;
+  height: 10em !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: default;
+}
+
+#profile-container #user-avatar-rounded.edit-active:before{
+  transition: opacity .3s cubic-bezier(.17,.84,.44,1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  background: rgba(83, 83, 83, 0.322);
+  content: '';
+  opacity: 0;
+}
+
+#profile-container #user-avatar-rounded.edit-active:after{
+  content: url('data:image/svg+xml;charset=UTF-8, <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="40px" width="40px"  viewBox="0 0 24 24"><g><path fill="white" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></g></svg>');
+  opacity: 0;
+  transition: opacity .2s cubic-bezier(.17,.84,.44,1);
+}
+
+#profile-container #user-avatar-rounded.edit-active:hover:after{
+  opacity: 1
+}
+
+#profile-container #user-avatar-rounded.edit-active:hover:before{
+  opacity: 1
+}
+
+.edit-active{
+  cursor: pointer !important;
+}
+
+#profile-container #user-welcome-wrapper-inner{
+  border-bottom-style: solid;
+  border-color: #393839;
+  border-width: 1px;
+  padding: 0 30px 30px 30px;
+  flex-wrap: wrap;
+}
+
+#profile-container #user-welcome-wrapper-inner #name_joined_container{
+  margin-left: 30px;
+  font-size: 16px;
+  position: relative;
+}
+
+#profile-container #user-welcome-wrapper-inner #name_joined_container p{
+  margin-top: 7px;
+  font-size: 12px;
+}
+
+#profile-container #user-welcome-wrapper-inner #name_joined_container h2{
+  display: inline-block;
+  position: relative;
+}
+
+#profile-container #user-welcome-wrapper-inner #name_joined_container h2:after{
+  position: absolute;
+  right: -30px;
+  top: 0;
+  content: url('data:image/svg+xml;charset=UTF-8, <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="25px" width="25px"  viewBox="0 0 24 24"><g><path fill="white" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></g></svg>');
+  opacity: 0;
+}
+
+#profile-container #user-welcome-wrapper-inner #name_joined_container.edit-active:hover h2:after{
+  opacity: 1;
+}
+
+#profile-container #user-welcome-wrapper-inner #name_joined_container.edit-active:hover h2{
+  text-decoration: underline;
+  color: rgb(182, 182, 182);
+}
+
+#account-setting-btn{
+  margin-left: auto;
+}
+
+#user-record-box{
+  margin-top: 5px;
+  display: inline-flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#user-record-box .record-box-items{
+  padding: 10px;
+  font-size: 1em;
+  height: 46px;
+  width: 14em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: filter .4s cubic-bezier(0.215, 0.610, 0.355, 1);
+  cursor: pointer;
+}
+
+#user-record-box a{
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+#user-record-box a:nth-of-type(1) .record-box-items{
+  background: linear-gradient(30deg, #be1e53, #a815aa);
+}
+
+#user-record-box a:nth-of-type(2) .record-box-items{
+  background: linear-gradient(30deg, rgb(189, 115, 31), rgb(192, 181, 27));
+}
+#user-record-box a:nth-of-type(3) .record-box-items{
+  background: linear-gradient(30deg, rgb(65, 110, 207), rgb(27, 79, 192));
+}
+#user-record-box a:nth-of-type(4) .record-box-items{
+  background: linear-gradient(30deg, rgb(100, 58, 181), rgb(20, 11, 199));
+}
+
+#user-record-box .record-box-items:hover{
+  filter: saturate(0);
+}
+
+#user-record-box .record-box-items.border-selected{
+  border-bottom-style: solid;
+  border-width: 4px;
+  border-color: white;
+}
+
+#user-record-box a:nth-of-type(1) .record-box-items.border-selected{
+  box-shadow: 0 4px 8px 0 rgba(190, 30, 83, 0.2), 0 6px 20px 0 rgba(168, 21, 170, 0.19) !important;
+}
+#user-record-box a:nth-of-type(2) .record-box-items.border-selected{
+  box-shadow: 0 4px 8px 0 rgba(189, 115, 31, 0.2), 0 6px 20px 0 rgba(192, 181, 27, 0.19) !important;
+} 
+#user-record-box a:nth-of-type(3) .record-box-items.border-selected{
+  box-shadow: 0 4px 8px 0 rgba(65, 110, 207, 0.2), 0 6px 20px 0 rgba(27, 79, 192, 0.19) !important;
+} 
+#user-record-box a:nth-of-type(4) .record-box-items.border-selected{
+  box-shadow: 0 4px 8px 0 rgba(100, 58, 181, 0.2), 0 6px 20px 0 rgba(20, 11, 199, 0.19) !important;
+}
+
+
+body.overlay-active #fixed-full #fixed-full-content-wrapper{
+  width: 461px;
+  height: auto;
+}
+.post-module .post-content #category-edit{
+  top: -30px
+}
+
+.post-module .post-content #category-edit{
+  padding: 0 !important;
+}
+.post-module .post-content #category-edit i{
+  font-size: 24px;
+  transition: color .1s cubic-bezier(0.23, 1, 0.320, 1);
+  padding: 10px 15px;
+  cursor: pointer;
+  
+}
+
+.post-module .post-content #category-edit i:nth-of-type(2){
+  /* margin-right: 20px; */
+}
+
+.post-module .post-content #category-edit i:hover{
+  background: #381d0b8e;
+}
+
+#fixed-usernameEdit-container, #fixed-deleteConfirmation-container, #fixed-editQuestion-container{
+  display: none;
+}
+
+#fixed-deleteConfirmation-container form{
+  flex-flow: row !important;
+  justify-content: space-between;
+}
+
+
+
+#fixed-full #fixed-full-content-wrapper #fixed-deleteConfirmation-container h1{
+  margin: 0 0 1em 0 !important
+}
+
+#fixed-full #fixed-full-content-wrapper #fixed-deleteConfirmation-container div .hero-button, #fixed-editQuestion-container div .hero-button, #fixed-usernameEdit-container div .hero-button{
+  width: 49%;
+}
+
+#fixed-full #fixed-full-content-wrapper #fixed-deleteConfirmation-container div .hero-button:nth-of-type(2), #fixed-editQuestion-container div .hero-button:nth-of-type(2), #fixed-usernameEdit-container div .hero-button:nth-of-type(2){
+  background-color: #707070;
+}
