@@ -1,4 +1,6 @@
 <div align="center">
-	<img src="media/svg.png" width="192" />
-	MindSpace
+	<div display="inline">
+		<img src="media/svg.png" width="192" />
+		<h1>MindSpace</h1>
+	</div>
 </p>
